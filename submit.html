@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit - Cultivating Human Futures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>CHF 2024</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="themes.html">Themes</a></li>
+                <li><a href="submit.html" class="active">Submit</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Call for Papers & Submissions</h1>
+            <p>We welcome diverse forms of scholarly and creative contribution</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+        <div class="container">
+            <h2>Submission Guidelines</h2>
+            
+            <div class="submission-info">
+                <h3>Submission Deadline</h3>
+                <p class="highlight">February 28, 2024</p>
+                
+                <h3 style="margin-top: 30px;">Notification Date</h3>
+                <p class="highlight">April 15, 2024</p>
+                
+                <h3 style="margin-top: 30px;">Conference Dates</h3>
+                <p class="highlight">June 10-12, 2024</p>
+            </div>
+
+            <h3>Submission Types</h3>
+            <p>We invite submissions in the following formats:</p>
+            
+            <div class="submission-types">
+                <div class="submission-type">
+                    <h4>Research Papers</h4>
+                    <p>Full research papers (5,000-8,000 words) presenting original scholarly work that engages with one or more conference themes.</p>
+                    <p><strong>Format:</strong> Anonymized PDF with academic references</p>
+                </div>
+                
+                <div class="submission-type">
+                    <h4>Position Papers</h4>
+                    <p>Conceptual or argumentative papers (3,000-5,000 words) presenting a position, debate, or critical perspective on key conference questions.</p>
+                    <p><strong>Format:</strong> Anonymized PDF with references</p>
+                </div>
+                
+                <div class="submission-type">
+                    <h4>Panel Proposals</h4>
+                    <p>Proposed panels (4-5 presentations) exploring a theme or question in depth. Submit a panel abstract (500 words) plus brief bios of panelists.</p>
+                    <p><strong>Format:</strong> PDF with speaker information</p>
+                </div>
+                
+                <div class="submission-type">
+                    <h4>Creative Works</h4>
+                    <p>Artistic, literary, or multimedia works that engage with conference themes. Include a 500-word artist/author statement explaining the work's engagement with our questions.</p>
+                    <p><strong>Format:</strong> Varies (PDFs, links, etc.)</p>
+                </div>
+                
+                <div class="submission-type">
+                    <h4>Practitioner Cases</h4>
+                    <p>Case studies or reflective accounts (3,000-5,000 words) from educators, designers, policymakers, or practitioners implementing or thinking about intelligent systems in practice.</p>
+                    <p><strong>Format:</strong> PDF with any relevant appendices</p>
+                </div>
+                
+                <div class="submission-type">
+                    <h4>Workshop Proposals</h4>
+                    <p>Interactive workshops (2-3 hours) that invite participants into dialogue, experimentation, or co-creation. Submit a proposal (500 words) with learning objectives and format.</p>
+                    <p><strong>Format:</strong> PDF with detailed description</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">Selection Criteria</h3>
+            <p>Submissions will be evaluated based on:</p>
+            <ul class="criteria-list">
+                <li><strong>Relevance:</strong> Clear engagement with one or more conference themes and guiding questions</li>
+                <li><strong>Quality:</strong> Strong conceptual thinking, clear expression, and appropriate methodology</li>
+                <li><strong>Originality:</strong> Novel perspectives, approaches, or insights</li>
+                <li><strong>Inclusivity:</strong> Representation of diverse voices, epistemologies, and ways of knowing</li>
+                <li><strong>Impact:</strong> Potential to advance dialogue and contribute to the field</li>
+                <li><strong>Accessibility:</strong> Clear communication that engages multiple disciplines and backgrounds</li>
+            </ul>
+
+            <h3 style="margin-top: 40px;">How to Submit</h3>
+            <p>Submissions should be made through our online submission portal:</p>
+            
+            <div class="submission-form">
+                <form id="submissionForm" method="POST" action="/submit">
+                    <div class="form-group">
+                        <label for="submissionType">Submission Type *</label>
+                        <select id="submissionType" name="submissionType" required>
+                            <option value="">Select a type...</option>
+                            <option value="research-paper">Research Paper</option>
+                            <option value="position-paper">Position Paper</option>
+                            <option value="panel">Panel Proposal</option>
+                            <option value="creative">Creative Work</option>
+                            <option value="practitioner">Practitioner Case</option>
+                            <option value="workshop">Workshop Proposal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title">Title *</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="theme">Primary Theme *</label>
+                        <select id="theme" name="theme" required>
+                            <option value="">Select a theme...</option>
+                            <option value="theme1">Theme 1: Epistemic Pluralism</option>
+                            <option value="theme2">Theme 2: Reimagining Education</option>
+                            <option value="theme3">Theme 3: Intelligent Systems & Knowledge Ecologies</option>
+                            <option value="theme4">Theme 4: Language, Culture & Meaning</option>
+                            <option value="theme5">Theme 5: Humanities in Transition</option>
+                            <option value="theme6">Theme 6: Human Flourishing & Democratic Life</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="abstract">Abstract (500 words) *</label>
+                        <textarea id="abstract" name="abstract" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="author">Author/Creator Name *</label>
+                        <input type="text" id="author" name="author" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="institution">Institutional Affiliation</label>
+                        <input type="text" id="institution" name="institution">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file">Upload Document *</label>
+                        <input type="file" id="file" name="file" accept=".pdf,.doc,.docx" required>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">I agree to the conference submission and publication guidelines</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <h3 style="margin-top: 40px;">Questions?</h3>
+            <p>
+                For questions about submissions, please contact the program committee at 
+                <a href="mailto:submit@cultivatinghumanfutures.org">submit@cultivatinghumanfutures.org</a>
+            </p>
+
+            <h3 style="margin-top: 30px;">Important Notes</h3>
+            <ul class="important-notes">
+                <li>All submissions should be original work not previously published</li>
+                <li>Submitted papers should be anonymized for blind review</li>
+                <li>Authors should avoid self-identifying information in the submission</li>
+                <li>We are committed to a diverse, inclusive conference program</li>
+                <li>Accepted authors will be required to register for the conference</li>
+                <li>Selected papers may be considered for publication in a dedicated volume</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Join Us in This Conversation</h2>
+            <p>We look forward to receiving your submission and learning about your perspectives on cultivating human futures.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Cultivating Human Futures</h4>
+                    <p>An international conference on knowledge, education, and society in the age of intelligent systems.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="themes.html">Themes</a></li>
+                        <li><a href="submit.html">Submit</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@cultivatinghumanfutures.org</p>
+                    <p><a href="contact.html">Contact Us</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cultivating Human Futures Conference. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
